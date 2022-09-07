@@ -10,7 +10,8 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:vscode-static-autocomplete.helloWorld"
+    "onCommand:vscode-static-autocomplete.helloWorld",
+      "onLanguage:markdown"
   ],
   "main": "./dist/extension.js",
   "contributes": {
