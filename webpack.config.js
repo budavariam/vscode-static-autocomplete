@@ -40,7 +40,9 @@ const extensionConfig = {
       }
     ]
   },
+  // Enable sourcemaps for debugging webpack's output.
   devtool: 'nosources-source-map',
+  //  devtool: "eval-source-map",
   infrastructureLogging: {
     level: "log", // enables logging required for problem matchers
   },
