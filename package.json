@@ -5,7 +5,7 @@
   "repository": {
     "url": "https://github.com/budavariam/vscode-static-autocomplete"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.71.0"
   },
@@ -24,7 +24,21 @@
         "title": "vscode-static-autocomplete: Reload AutoComplete Values"
       }
     ],
-    ]
+    "configuration": {
+      "title": "Static Autocomplete",
+      "properties": {
+        "vscode-static-autocomplete.pattern": {
+          "type": "string",
+          "default": "*.md",
+          "description": "Markdown file locations, that you'd likee to use this settings with"
+        },
+        "vscode-static-autocomplete.triggers": {
+          "type": "object",
+          "default": "{}",
+          "description": "Map of the values of the autocomplete field CompletionItem lists. (https://code.visualstudio.com/api/references/vscode-api#CompletionItem)"
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "pnpm run package",
