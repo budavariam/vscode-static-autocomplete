@@ -6,9 +6,8 @@ import * as vscode from 'vscode';
  * kind: values of the vscode.CompletionItemKind enum
  * example config.json:
    ```json
-   {"vscode-static-autocomplete": {
-		"pattern": "todo.md",
-		"triggers": {
+   "vscode-static-autocomplete.pattern": "todo.md",
+	"vscode-static-autocomplete.triggers": {
 			"@": [
 			{
 				"label": "user",
@@ -25,7 +24,6 @@ import * as vscode from 'vscode';
 				"kind": 20
 			}
 			],
-		}
 		}
 	}
    ```
