@@ -53,7 +53,7 @@ interface ParsedAutocompleteData {
 	pattern?: string,
 }
 
-function generateStaticAutocompleteItemsFromConfig(values: ExtensionSettings) : ParsedAutocompleteData {
+function generateStaticAutocompleteItemsFromConfig(values: ExtensionSettings): ParsedAutocompleteData {
 	return {
 		values: values.triggers,
 		triggers: Object.keys(values),
