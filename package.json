@@ -13,16 +13,17 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:vscode-static-autocomplete.helloWorld",
-      "onLanguage:markdown"
+    "onCommand:vscode-static-autocomplete.reloadValues",
+    "onLanguage:markdown"
   ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "vscode-static-autocomplete.helloWorld",
-        "title": "Hello World"
+        "command": "vscode-static-autocomplete.reloadValues",
+        "title": "vscode-static-autocomplete: Reload AutoComplete Values"
       }
+    ],
     ]
   },
   "scripts": {
